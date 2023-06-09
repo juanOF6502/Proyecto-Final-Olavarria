@@ -1,0 +1,55 @@
+.producto-card {
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgba(136, 110, 76, 0.253);
+    width: 300px;
+    min-height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold; 
+    --c:  #229091;
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+        var(--_g) calc(var(--_p,0%) - 100%) 0%,
+        var(--_g) calc(200% - var(--_p,0%)) 0%,
+        var(--_g) calc(var(--_p,0%) - 100%) 100%,
+        var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    padding: 5px;
+    margin: 10px;
+    border: 3px solid var(--c);
+    transition: background-size .4s, background-position 0s .4s;
+    cursor: pointer;
+}
+button:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+}
+button:active {
+    background-color: var(--c);
+    color: #fff;
+}
+
+.details {
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    border: none;
+    border-radius: 10px;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.details-text{
+    transition: all 1s;
+}
+
+.details-text:hover {
+    transform: scale(1.05);
+    color: #F6EB14;
+}
+

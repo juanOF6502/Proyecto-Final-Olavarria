@@ -1,0 +1,30 @@
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.cart-container h2 {
+    text-align: center;
+}
+.resumen-productos {
+    border: 2px dashed;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(136, 110, 76, 0.253);
+}
+.btn-delete {
+    --c: #e74a39;
+    border: 3px solid #e74a39;
+}
+.no-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    text-align: center;
+}
+

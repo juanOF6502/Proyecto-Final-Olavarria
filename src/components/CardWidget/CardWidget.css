@@ -1,0 +1,14 @@
+.imgCarrito {
+    width: 5rem;
+    transition: 1s all;
+}
+.imgCarrito:hover {
+    transform: rotate(15deg);
+}
+
+@media screen and (max-width: 768px) {
+    .imgCarrito {
+        width: 50px;
+        transition: 1s all;
+    }
+}

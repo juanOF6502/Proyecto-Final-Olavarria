@@ -1,0 +1,15 @@
+.title {
+    text-align: center;
+    animation: rgb 8s infinite;
+    margin-bottom: 3rem;
+}
+
+@keyframes rgb {
+    0%{color: #4FAF44;}
+    20%{color: #F6EB14;}
+    40%{color: #FF9526;}
+    60%{color: #EF4423;}
+    80%{color: #2A3492;}
+    100%{color: #4FAF44;}
+}
+

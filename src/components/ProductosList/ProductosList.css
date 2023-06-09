@@ -1,0 +1,8 @@
+.list-productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 20px;
+}
