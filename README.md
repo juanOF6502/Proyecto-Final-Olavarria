@@ -1,4 +1,4 @@
-Este es mi proyecto final para el curso de desarrollo web en Olavarría. Está desarrollado utilizando React y tiene como objetivo proporcionar una aplicación web interactiva y funcional.
+Proyecto final del curso de REACT JS de una tienda de videojuegos retro:
 
 Funcionalidades:
 A) Visualizacion de listado de productos a partir de una base de datos en Firebase.
