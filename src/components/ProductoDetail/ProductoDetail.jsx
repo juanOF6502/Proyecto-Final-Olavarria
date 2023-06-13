@@ -28,7 +28,12 @@ const ProductoDetail = ({nombre, precio, id, img, texto, stock}) => {
                         <h5>Stock: {stock}</h5>
                         {
                         agregarCantidad > 0 
-                        ? (<Link to='/cart' className='link' onClick={()=> document.title = 'Game Zone || Carrito'}><button>Terminar Compra</button></Link>)
+                        ? (
+                            <div>
+                                <Link to='/cart' className='link' onClick={()=> document.title = 'Game Zone || Carrito'}><button>Terminar Compra</button></Link>
+                                <Link className='link' to={'/'} onClick={()=> document.title = 'Game Zone || Home'}><button style={{fontSize:'15px'}}>Seguir Comprando</button></Link>
+                            </div>
+                        )
                         : (<Contador inicial={1} stock={stock} funcionAgregar={manejadorCantidad}/>)
                         }
                     </div>

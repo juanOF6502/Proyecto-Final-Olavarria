@@ -5,6 +5,7 @@ import './ProductListContainer.css'
 import {db} from '../../services/firebase.config'
 import { collection, getDocs, query, where } from "firebase/firestore"
 import Footer from '../Footer/Footer'
+import Carrousel from '../Carrousel/Carrousel'
 
 const ProductoListContainer = () => {
     const [productos, setProductos] = useState([]);
@@ -28,6 +29,7 @@ const ProductoListContainer = () => {
 
     return (
         <>
+            <Carrousel/>
             <h1 className="title">Lista de Productos</h1>
             <div>
                 <ProductosList productos={productos}/>

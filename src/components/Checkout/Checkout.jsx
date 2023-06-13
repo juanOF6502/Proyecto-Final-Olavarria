@@ -39,7 +39,8 @@ const Checkout = () => {
             nombre,
             apelido,
             telefono,
-            email
+            email,
+            fecha: new Date()
         }
 
         Promise.all(
@@ -105,7 +106,7 @@ const Checkout = () => {
                             <label htmlFor="emailConfirmacion">Confirmar Email</label>
                             <input type="email" value={emailConfirmacion} onChange={(e)=> setEmailConfirmacion(e.target.value)}/>
                         
-                            {error && <p>{error}</p>}
+                            {error && <p style={{color:'#EF4423'}}>{error}</p>}
                             <button type="submit">Finalizar compra</button>
                         </form>
                     )
@@ -114,7 +115,7 @@ const Checkout = () => {
             </div>
             <div className="checkout-message"> 
                 {
-                    ordenId && (<strong>¡Gracias por su compra! Tu numero de orden es Nº <span>{ordenId}</span></strong>)
+                    ordenId && (<h6><strong>¡Gracias por su compra! Tu numero de orden es: Nº <span>{ordenId}</span></strong></h6>)
                 }
             </div>
             <div className="back-home">

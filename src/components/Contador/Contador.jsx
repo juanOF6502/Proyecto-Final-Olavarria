@@ -18,11 +18,21 @@ const Contador = ({inicial, stock, funcionAgregar}) => {
 
     return (
         <>
-            <button className='btn-delete' onClick={disminuirContador}> - </button>
-            <strong> {contador} </strong>
-            <button onClick={aumentarContador}> + </button>
-            <br />
-            <button onClick={()=> funcionAgregar(contador)}> Agregar al carrito</button>
+            {
+                stock > 0 
+                ? (
+                    <div>
+                        <button className='btn-delete' onClick={disminuirContador}> - </button>
+                        <strong> {contador} </strong>
+                        <button onClick={aumentarContador}> + </button>
+                        <br />
+                        <button onClick={()=> funcionAgregar(contador)}> Agregar al carrito</button>
+                    </div>
+                    
+                )
+                : (<h5 style={{color:'#EF4423'}}>Sin stock</h5>)
+            }
+            
         </>
     )
 }

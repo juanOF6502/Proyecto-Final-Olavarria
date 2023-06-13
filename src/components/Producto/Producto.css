@@ -8,6 +8,14 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.card-body p {
+    background-color: #229091;
+    width: fit-content;
+    border-radius: 10px;
+    padding-inline: 8px;
+    color: #fafafa;
+}
+
 button {
     font-family: 'Press Start 2P', cursive;
     font-weight: bold; 
@@ -25,6 +33,7 @@ button {
     border: 3px solid var(--c);
     transition: background-size .4s, background-position 0s .4s;
     cursor: pointer;
+    border-radius: 12px;
 }
 button:hover {
     --_p: 100%;
