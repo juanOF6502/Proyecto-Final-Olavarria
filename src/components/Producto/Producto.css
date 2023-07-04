@@ -27,13 +27,14 @@ button {
         var(--_g) calc(var(--_p,0%) - 100%) 100%,
         var(--_g) calc(200% - var(--_p,0%)) 100%;
     background-size: 50% calc(var(--_p,0%)/2 + .5%);
-    outline-offset: .1em;
-    padding: 5px;
+    padding: 3px;
     margin: 10px;
     border: 3px solid var(--c);
     transition: background-size .4s, background-position 0s .4s;
     cursor: pointer;
     border-radius: 12px;
+    outline: none;
+    
 }
 button:hover {
     --_p: 100%;

@@ -24,7 +24,7 @@ const Navbar = () => {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`}>
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav mx-auto">
               <li className="nav-item">
                 <NavLink 
                   to={'/'} 
